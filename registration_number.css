@@ -7,6 +7,7 @@ h1 {
     text-shadow: 2px 2px 5px black;
     text-align: center;
     background: yellow;
+    border: 5px;
     border-radius: 6px;
     border-color: black;
     border-style: solid;
@@ -42,6 +43,10 @@ h1 {
     background: gold;
 }
 
+#para {
+    
+}
+
 select {
     background: linear-gradient(180deg, yellow, gold, yellow);
     cursor: pointer;
@@ -53,7 +58,7 @@ select:active {
 
 option {
     color: black;
-    background: floralwhite;
+    background: florawhite;
     box-shadow: 2px 20px 5px black;
 }
 
@@ -67,14 +72,14 @@ option:hover {
 }
 
 li {
+    width: -100%;
     text-shadow: -2px 2px 5px black;
     border: solid;
     border-radius: 10px;
     font-size: 50px;
-    align-content: center;
     background: yellow;
     padding: 5px;
-    margin: 10px 400px;
+    margin: 10px 100px;
     border: solid 7px;
     border-radius: 10px;
 }
