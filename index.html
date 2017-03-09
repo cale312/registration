@@ -14,14 +14,15 @@
         <div id="heading"><h1>Registration Numbers</h1></div>
         
         <div id="input">
-            <input id="text" type="text" placeholder="enter registration number"/><button id="addBtn" type="button" onclick="add()"><strong>ADD</strong></button>
+            <input id="text" type="text" placeholder="registration number"/><button id="addBtn" type="button" onclick="add()"><strong>ADD</strong></button>
             <p id="para"><u>Your Registration Numbers</u></p>
-            <select id="drpDown" onclick="dropDwn">
+            <input id="filter" list="list" placeholder="filter"></input><button id="submitBtn" type="submit" onclick="filter()">submit</button>
+            <datalist id="list">
                 <option id="all">All</option>
                 <option id="cpt">Cape Town</option>
                 <option id="stell">Stellenbosch</option>
                 <option id="paarl">Paarl</option>
-            </select> 
+            </datalist> 
         </div>
         <ul id="lister">
             
