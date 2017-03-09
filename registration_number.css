@@ -45,18 +45,23 @@ h1 {
 }
 
 #para {
-    
+    font-size: 20px;
+    text-shadow: 1px 5px 5px black;
 }
 
 #filter {
-    background: ;
+    background: cream;
     cursor: pointer;
     text-transform: capitalize;
 }
 
-#submitBtn {
+#filterBtn {
     margin: 0px 5px;
     cursor: pointer;
+}
+
+#filterBtn:hover {
+    background: #777;
 }
 
 select:active {
