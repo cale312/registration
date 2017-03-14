@@ -29,16 +29,18 @@ function filter() {
     list = document.getElementsByTagName('li');
     for (var i = 0; i < list.length; i++) {
         var curElem = list[i];
-        if (opt === cpt && !curElem.textContent.startsWith('CA')) {
-            curElem.style.display = 'none';
-        } else if (opt === stell && !curElem.textContent.startsWith('CL')) {
-            curElem.style.display = 'none';
-        } else if (opt === paarl && !curElem.textContent.startsWith('CJ')) {
-            curElem.style.display = 'none';
+        if (opt === cpt && curElem.textContent.startsWith('CA')) {
+            curElem.style.display = 'inline-block';
+        } else if (opt === stell && curElem.textContent.startsWith('CL')) {
+            curElem.style.display = 'inline-block';
+        } else if (opt === paarl && curElem.textContent.startsWith('CJ')) {
+            curElem.style.display = 'inline-block';
         } else if (opt === all) {
             curElem.style.display = 'inline-block';
-        } else if (opt === ""){
+        } else if (opt === "") {
             curElem.style.display = 'inline-block';
+        } else {
+            curElem.style.display = 'none';
         }
     }
 }
