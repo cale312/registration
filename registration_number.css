@@ -19,12 +19,13 @@ h1 {
 }
 
 #text {
+    box-shadow: 0px 0px 100px;
     font-size: 25px;
     padding: 16px;
     text-align: center;
     background: yellow;
     color: black;
-    border: solid 7px;
+    border: double 7px;
     border-radius: 10px;
     text-transform: uppercase;
 }
@@ -36,12 +37,16 @@ h1 {
     margin: 10px;
     font-size: 30px;
     font-family: sans-serif;
-    box-shadow: 2px 2px 5px gold;
+    box-shadow: 3px 5px 5px yellow;
     cursor: pointer;
 }
 
 #addBtn:hover {
     background: gold;
+}
+
+#addBtn:active {
+    box-shadow: 2px 2px 4px yellow;
 }
 
 #para {
@@ -83,22 +88,29 @@ option {
 }
 
 li {
-    float: left;
+    box-shadow: 0px 0px 100px;
     width: 5em;
     text-shadow: -2px 2px 5px black;
+    text-align: center;
     border: solid;
     border-radius: 10px;
     font-size: 5em;
+    font-family: impact;
     background: yellow;
     margin: 0.1em 0.5em;
-    border: solid 7px;
+    border: double 10px;
     border-radius: 10px;
+    display: inline-block;
 }
 
 footer {
     color: yellow;
     text-align: center;
     clear: both;
+}
+
+#logo {
+    border-radius: 2em
 }
 
 
