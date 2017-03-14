@@ -31,14 +31,14 @@ function filter() {
         var curElem = list[i];
         if (opt === cpt && !curElem.textContent.startsWith('CA')) {
             curElem.style.display = 'none';
-        } else if (opt === stell & !curElem.textContent.startsWith('CL')) {
+        } else if (opt === stell && !curElem.textContent.startsWith('CL')) {
             curElem.style.display = 'none';
         } else if (opt === paarl && !curElem.textContent.startsWith('CJ')) {
             curElem.style.display = 'none';
         } else if (opt === all) {
-            curElem.style.display = 'block';
-        } else {
-            curElem.style.display = 'block';
+            curElem.style.display = 'inline-block';
+        } else if (opt === ""){
+            curElem.style.display = 'inline-block';
         }
     }
 }
