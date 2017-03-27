@@ -20,13 +20,15 @@ function add() {
 
 function filter() {
     'use strict';
-    var opt, all, cpt, stell, paarl, list, curElem;
+    var opt, all, cpt, stell, paarl, bellville, kuilsriver, list, curElem;
     //typed in town name to filter
     opt = document.getElementById("filter").value;
     all = document.getElementById("all").innerHTML;
     cpt = document.getElementById("cpt").innerHTML;
     stell = document.getElementById("stell").innerHTML;
     paarl = document.getElementById("paarl").innerHTML;
+    bellville = document.getElementById('bellville').innerHTML;
+    kuilsriver = document.getElementById('kuilsriver').innerHTML;
     list = document.getElementsByTagName('li');
     for (var i = 0; i < list.length; i++) {
         curElem = list[i];
@@ -38,13 +40,18 @@ function filter() {
             curElem.style.display = 'none';
         } else if (opt === paarl && !curElem.textContent.startsWith('CJ')) {
             curElem.style.display = 'none';
-        } else if (opt === all || opt === "") {
+        } else if (opt === bellville && !curElem.textContent.startsWith('CY')) {
+            curElem.style.display = 'none';
+        } else if (opt === kuilsriver && !curElem.textContent.startsWith('CF')) {
+            curElem.style.display = 'none';
+        }else if (opt === all || opt === "") {
             curElem.style.display = 'inline-block';
         } else {
             curElem.style.display = 'inline-block';
         }
     }
 }
+
 
 
 

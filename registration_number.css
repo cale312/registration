@@ -59,6 +59,14 @@ h1 {
     text-transform: uppercase;
 }
 
+#filter:hover {
+    box-shadow: 0px 0px 10px;
+}
+
+#filter:active {
+    border-color: blue;
+}
+
 #filterBtn {
     margin: 0px 5px;
     cursor: pointer;
@@ -68,14 +76,13 @@ h1 {
     background: #777;
 }
 
-select:active {
-    border-color: blue;
+#clearBtn {
+    clear: both;
 }
 
-option {
-    color: black;
-    background: florawhite;
-    box-shadow: 2px 20px 2px black;
+#clearBtn:hover {
+    background: #777;
+    cursor: pointer;
 }
 
 #lister {
@@ -83,7 +90,6 @@ option {
     list-style: none;
     padding: 5px;
     margin: 10px 100px;
-    
 }
 
 li {
