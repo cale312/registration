@@ -1,42 +1,51 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
-    
-    <head>
-        <link href="registration_number.css" rel="stylesheet" type="text/css"/>
-        <header>
-            <title>Registration Numbers</title>
-        </header>
-        
-    </head>
-    
-    <body>
-        
-        <div id="heading"><h1>Registration Numbers</h1></div>
-        
-        <div id="input">
-            <input id="text" type="text" placeholder="enter registration number"/><button id="addBtn" type="button" onclick="add()"><strong>ADD</strong></button>
-            <p id="para"><u>Your Registration Numbers</u></p>
-            <select id="drpDown" onclick="dropDwn">
-                <option id="all">All</option>
-                <option id="cpt">Cape Town</option>
-                <option id="stell">Stellenbosch</option>
-                <option id="paarl">Paarl</option>
-            </select> 
-        </div>
-        <ul id="lister">
-            
-        </ul>
-        
-    </body>
-    
-    <script src="registration_number.js" charset="utf-8">
-    </script>
+
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/icon.png">
+  <meta charset="utf-8">
+  <title>Registrations</title>
+  <header>
+    <h1>- MY REGISTRATION NUMBERS -</h1>
+  </header>
+</head>
+
+<body>
+  <br>
+  <br>
+  <div class="input-wrapper">
+    <input type="text" name="" value="" class="plate-number" placeholder="enter plate">
+    <input type="submit" name="" value="add" class="add-btn">
+    <br>
+    <br>
+    <input type="radio" name="twn" value="all">All |
+    <input type="radio" name="twn" value="cpt">Cape Town |
+    <input type="radio" name="twn" value="stell">Stellebosch |
+    <input type="radio" name="twn" value="bell">Bellville |
+    <input type="radio" name="twn" value="kuil">Kuilsriver
+  </div>
+</body>
+
+<div class="footer">
+  <ul class="list-inline">
+    <li>
+      <a href="https://www.instagram.com/sogaxa_zikisa/" class="btn-social btn-outline" target="_blank"><img src="img/instagram.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sogaxacale" class="btn-social btn-outline" target="_blank"><img src="img/facebook.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/zikisacalesogaxa" class="btn-social btn-outline" target="_blank"><img src="img/Linkedin.png" alt=""></a>
+    </li>
+    <li>
+      <a href="https://www.github.com/cale312" class="btn-social btn-outline" target="_blank"><img src="img/github.png" alt=""></a>
+    </li>
+  </ul>
+  <h4>site By: Zikisa Cale Sogaxa</h4>
+</div>
+
+<script src="scripts/main.js">
+</script>
 
 </html>
-
-<footer>&copy;codeX 2017</footer>
-
-
-
-
-
