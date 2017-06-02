@@ -19,11 +19,19 @@
     <input type="submit" name="" value="add" class="add-btn">
     <br>
     <br>
-    <input type="radio" name="twn" value="all">All |
-    <input type="radio" name="twn" value="cpt">Cape Town |
-    <input type="radio" name="twn" value="stell">Stellebosch |
-    <input type="radio" name="twn" value="bell">Bellville |
-    <input type="radio" name="twn" value="kuil">Kuilsriver
+    <input type="radio" name="town" value="all">All |
+    <input type="radio" name="town" value="cpt">Cape Town |
+    <input type="radio" name="town" value="stell">Stellebosch |
+    <input type="radio" name="town" value="bell">Bellville |
+    <input type="radio" name="town" value="kuil">Kuilsriver
+    <br>
+    <br>
+    <input type="submit" name="" value="filter" class="filter-btn">
+  </div>
+  <br>
+  <br>
+  <div class="plates-wrapper">
+    <ul class="plate-list"></ul>
   </div>
 </body>
 
@@ -45,7 +53,10 @@
   <h4>site By: Zikisa Cale Sogaxa</h4>
 </div>
 
-<script src="scripts/main.js">
-</script>
+<script src="scripts/getPlate.js"></script>
+<script src="scripts/createLi.js"></script>
+<script src="scripts/getRadioButton.js"></script>
+<script src="scripts/filterPlates.js"></script>
+<script src="scripts/main.js"></script>
 
 </html>
