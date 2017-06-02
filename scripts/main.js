@@ -6,10 +6,13 @@ var filterBtn = document.querySelector('.filter-btn');
 var displayPlates = document.querySelector('.plate-list');
 var platesWrapper = document.querySelector('.plates-wrapper');
 var radioButtons = document.getElementsByName('town');
+var platesArr = [];
 
 addBtn.addEventListener('click', function(){
-  var thePlate = getPlate(newPlate.value);
-  var appendPlate = createLi(thePlate);
+  let thePlate = getPlate(newPlate.value);
+  platesArr  = storePlates(thePlate);
+  console.log(platesArr);
+  let appendPlate = createLi(thePlate);
   if (appendPlate !== undefined){
     displayPlates.appendChild(appendPlate);
   }
@@ -17,6 +20,9 @@ addBtn.addEventListener('click', function(){
 });
 
 filterBtn.addEventListener('click', function(){
-  var checkedButton = getRadioButton(radioButtons);
-  // var filterResults  = filterPlates(checkedButton);
+  let allPlates = document.getElementsByTagName('li');
+  let thePlate = getPlate(newPlate.value);
+  let checkedButton = getRadioButton(radioButtons);
+  let filteredPlates = filterPlates(checkedButton, platesArr);
+
 });
