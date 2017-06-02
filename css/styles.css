@@ -1,13 +1,14 @@
 body{text-align: center; margin: 0px;}
-header{background: blue; box-shadow: 0px 3px 5px;}
-h1{font-size: 2.5em; font-family: sans-serif; letter-spacing: .1em; display: inline-block; background: ghostwhite; border: double black; padding: 20px 60px; border-radius: 10px; color: blue; text-shadow: 0px 0px 5px grey; box-shadow: 0px 3px 5px black;}
-.input-wrapper{background: blue; padding: 50px 50px; display: inline-block; border-radius: 10px;}
-.plate-number{padding: 10px 30px; border: double black; border-radius: 10px; text-align: center;}
-.add-btn{padding: 10px 20px; border: solid 1px white; border-radius: 10px; background: blue; font-family: sans-serif; font-weight: bolder;cursor: pointer;}
-.add-btn:hover{background: white; color: blue;}
-
+header{background: black; box-shadow: 0px 3px 5px;}
+h1{font-size: 2.5em; font-family: sans-serif; letter-spacing: .1em; display: inline-block; background: ghostwhite; border: double black; padding: 20px 60px; border-radius: 10px; color: black; text-shadow: 0px 0px 5px grey; box-shadow: 0px 3px 5px black;}
+.input-wrapper{background: black; padding: 50px 50px; display: inline-block; border-radius: 10px; color: ghostwhite;}
+.plate-number{padding: 10px 30px; border: double black; border-radius: 10px; text-align: center; text-transform: uppercase;}
+.add-btn, .filter-btn{color: ghostwhite; padding: 10px 20px; border: solid 1px white; border-radius: 10px; background: black; font-family: sans-serif; font-weight: bolder;cursor: pointer;}
+.add-btn:hover, .filter-btn:hover{background: white; color: black;}
+.plates-wrapper{border: solid; padding: 50px;}
+.plate-list li{text-transform: uppercase; display: inline-block; padding: 5px 10px; background: yellow; font-family: sans-serif; font-size: 4em; font-weight: bolder; margin: 10px; border: double; border-radius: 10px; box-shadow: 0px 0px 5px}
 
 .footer img{width: 50; height: 50px; list-style: none;}
 .footer li{list-style: none;}
 .list-inline li{display: inline-block;}
-h4{float: left; font-family: monospace; color: skyblue; margin-left: 5px;}
+h4{float: left; font-family: monospace; color: skyblue; margin-left: 5px; color: black;}
