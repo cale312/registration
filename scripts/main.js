@@ -11,7 +11,6 @@ var platesArr = [];
 addBtn.addEventListener('click', function(){
   let thePlate = getPlate(newPlate.value);
   platesArr  = storePlates(thePlate);
-  console.log(platesArr);
   let appendPlate = createLi(thePlate);
   if (appendPlate !== undefined){
     displayPlates.appendChild(appendPlate);
@@ -21,8 +20,28 @@ addBtn.addEventListener('click', function(){
 
 filterBtn.addEventListener('click', function(){
   let allPlates = document.getElementsByTagName('li');
-  let thePlate = getPlate(newPlate.value);
   let checkedButton = getRadioButton(radioButtons);
   let filteredPlates = filterPlates(checkedButton, platesArr);
 
+  for (let i = 0; i < allPlates.length; i++){
+    var curElem = allPlates[i];
+    if(checkedButton === 'cpt' && !curElem.textContent.startsWith('CA')){
+      curElem.style.display = 'none';
+    } else if (checkedButton === 'stell' && !curElem.textContent.startsWith('CL')){
+      curElem.style.display = 'none';
+    } else if (checkedButton === 'bell' && !curElem.textContent.startsWith('CY')){
+      curElem.style.display = 'none';
+    } else if (checkedButton === 'kuil' && !curElem.textContent.startsWith('CF')){
+      curElem.style.display = 'none';
+    } else {
+      curElem.style.display = 'inline-block';
+    }
+  }
+});
+
+platesWrapper.addEventListener('click', function(evt){
+  let plateToDelete = evt.target;
+  if (plateToDelete){
+    plateToDelete.style.display = 'none';
+  }
 });
